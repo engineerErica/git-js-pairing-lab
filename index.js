@@ -61,3 +61,12 @@ function triangleArea(height, base) {
     return height * base / 2
 }
 // console.log(triangleArea(7, 10))
+
+//Problem #9
+function betweenTwentyAndForty(num){
+    if (num >= 20 && num <=40){
+        return true
+    } else { return false
+    }
+}
+// console.log(betweenTwentyAndForty(0)); 
