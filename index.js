@@ -55,3 +55,9 @@ function isNegative(num){
     return num < 0 ? true : false
 }
 // console.log(isNegative(-5)) 
+
+// Problem #8
+function triangleArea(height, base) {
+    return height * base / 2
+}
+// console.log(triangleArea(7, 10))
