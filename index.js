@@ -5,7 +5,7 @@ function fiveToOneHundred(){
         console.log(i)
     }
 }
-fiveToOneHundred()
+//fiveToOneHundred()
 
 // Problem #2
 function multiplesOfThree() {
@@ -13,4 +13,14 @@ function multiplesOfThree() {
         console.log(i)
     }
 }
-multiplesOfThree()
+//multiplesOfThree()
+
+// Problem #3
+function multiplesOfThreeOrFive(){
+    for (let i = 3; i <= 100; i++){
+        if (i % 3 === 0 || i % 5 === 0){
+            console.log(i)
+        }
+    } 
+}
+multiplesOfThreeOrFive()
