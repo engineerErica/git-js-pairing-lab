@@ -48,4 +48,10 @@ function add(num1, num2) {
     }
 }
 
-console.log(add(6, 6))
+// console.log(add(6, 6))
+
+// Problem #7
+function isNegative(num){
+    return num < 0 ? true : false
+}
+// console.log(isNegative(-5)) 
