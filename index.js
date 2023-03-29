@@ -51,8 +51,8 @@ function add(num1, num2) {
 // console.log(add(6, 6))
 
 // Problem #7
-function isNegative(num){
-    return num < 0 ? true : false
+function isNegative(int){
+    return int < 0 ? true : false
 }
 // console.log(isNegative(-5)) 
 
@@ -63,10 +63,20 @@ function triangleArea(height, base) {
 // console.log(triangleArea(7, 10))
 
 //Problem #9
-function betweenTwentyAndForty(num){
-    if (num >= 20 && num <=40){
+function betweenTwentyAndForty(int){
+    if (int >= 20 && int <=40){
         return true
     } else { return false
     }
 }
 // console.log(betweenTwentyAndForty(0)); 
+
+// Problem #10 
+function largest(int1, int2, int3) {
+    if (int1 > int2 && int1 >int3) {
+        return int1
+    } else if (int2 > int1 && int2 > int3) {
+        return int2
+    } else return int3
+}
+// console.log(largest(10, 9, 8))
