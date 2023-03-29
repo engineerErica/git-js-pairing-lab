@@ -31,4 +31,10 @@ function untilNum(int) {
         console.log(i)
     }
 }
-untilNum(72)
+// untilNum(72)
+
+// Problem #5
+function multiply(num1, num2){
+ return num1 * num2   
+}
+// console.log(multiply(9, 3))
