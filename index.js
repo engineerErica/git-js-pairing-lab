@@ -8,12 +8,21 @@ function fiveToOneHundred(){
 //fiveToOneHundred()
 
 // Problem #2
+// function multiplesOfThree() {
+//     for (let i = 3; i < 100; i+=3) {
+//         console.log(i)
+//     }
+// }
+//multiplesOfThree()
+
 function multiplesOfThree() {
-    for (let i = 3; i < 100; i+=3) {
-        console.log(i)
+    for (let i = 1; i < 100; i++) {
+        if (i % 3 === 0) {
+            console.log(i)
+        }
     }
 }
-//multiplesOfThree()
+// multiplesOfThree()
 
 // Problem #3
 function multiplesOfThreeOrFive(){
@@ -73,7 +82,7 @@ function betweenTwentyAndForty(int){
 
 // Problem #10 
 function largest(int1, int2, int3) {
-    if (int1 > int2 && int1 >int3) {
+    if (int1 > int2 && int1 > int3) {
         return int1
     } else if (int2 > int1 && int2 > int3) {
         return int2
