@@ -96,9 +96,9 @@ function largest(int1, int2, int3) {
 // console.log(largest(10, 9, 8))
 
 // Problem #11 
-//const printTime = () => {
-//    console.log(new Date(time))
-//}
+// const printTime = () => {
+//     console.log(new Date(time))
+// }
 
 //printTime()
 // Jowel said to leave this problem.
@@ -123,14 +123,49 @@ const isLeapYear = (year) => {
 
 // Problem #13 
 const getExtention = (fileName) => {
-    // return fileName.substr(fileName.lastIndexOf('.'), fileName.length - 1)
+    return fileName.substr(fileName.lastIndexOf('.'), fileName.length - 1)
+};
 
-    const parts = fileName.split(".");
-    console.log(parts)
+// const getExtention = (fileName) => {
+//     const parts = fileName.split(".");
+//     console.log(parts)
 
-    return ` .${parts[parts.length - 1]}`
+//     return ` .${parts[parts.length - 1]}`
+// };
+// console.log(getExtention("hello.txt"))
+// console.log(getExtention("app.js"))
+// console.log(getExtention("README.md"))
+
+// Problem #14
+const absoluteNineteen = (int) => {
+    if (int >= 19) {
+        return Math.abs((int - 19) * 3);
+    }
+    else {
+        return Math.abs(int - 19);
+    }
+};
+
+// console.log(absoluteNineteen(18))
+
+// Problem #15
+const switchLetters = (str) => {
+    let first = str.charAt(0);
+    let end = str.length - 1;
+    let last = str.charAt(end);
+    let mid = str.slice(1, end);
+    return `${last}${mid}${first}`
+};
+// console.log(switchLetters("anne"))
+
+// Problem #16
+const changeString = (string) => {
+    let newString = ""
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    for (let i = 0; i < string.length; i++) {
+       newString = newString + alphabet[alphabet.indexOf(string[i]) + 1]
+    }
+    return newString;
 }
 
-console.log(getExtention("hello.txt"))
-console.log(getExtention("app.js"))
-console.log(getExtention("README.md"))
+// console.log(changeString("abc"))
